@@ -22,13 +22,11 @@ const Navbar = () => {
       </div>
       <div className=" hidden md:flex md:items-center space-x-4 opacity-70">
         <NavLink to="/">
-        {({ isActive }) => (
+          {({ isActive }) => (
             <span className={isActive ? "active" : ""}>Home</span>
           )}
         </NavLink>
-        <NavLink to="/aboutus">
-          About Us
-        </NavLink>
+        <NavLink to="/aboutus">About Us</NavLink>
         <NavLink to="/team">Team</NavLink>
         <NavLink to="bootcamp">Bootcamp</NavLink>
         <NavLink to="events">Event</NavLink>
@@ -54,21 +52,16 @@ const Navbar = () => {
         </button>
         <div>
           <img
-            src={sun}
-            alt="theme changer"
-            onClick={toggleTheme}
-            className={darkTheme ? "" : "hidden"}
-          />
-          <img
-            src={moon}
+            src={darkTheme?sun:moon}
             alt="theme changer"
             onClick={toggleTheme}
             width={24}
             height={24}
-            className={darkTheme ? "hidden" : "block"}
           />
         </div>
       </div>
+
+      
     </div>
   );
 };

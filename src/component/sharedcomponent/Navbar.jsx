@@ -29,7 +29,7 @@ const Navbar = () => {
       <div>
         <img src={logo} alt="" width="32" height="32" />
       </div>
-      <div className=" hidden md:flex md:items-center space-x-4 opacity-70 ">
+      <div className=" hidden xl:flex md:items-center space-x-4 opacity-70 ">
         <NavLink to="/">
           {({ isActive }) => (
             <span className={isActive ? "active" : ""}>Home</span>
@@ -71,7 +71,7 @@ const Navbar = () => {
           <img
             src={isopen? closebtn: hamburger}
             alt=""
-            className="md:hidden"
+            className="xl:hidden"
             onClick={toggleSideMenu}
           />
         </div>

@@ -27,9 +27,9 @@ const PhotoComponent = () => {
       <img
         src={girlsimage1}
         alt=""
-        className="w-full md:h-[80vh] z-100 object-cover"
+        className="w-full md:h-[80vh] z-100 object-cover "
       />
-      <img src={secondaryImage} alt="" className=" w-20 h-20 md:w-72 md:h-72 absolute -top-4 -left-4 md:-top-14 md:-left-8 z-10" />
+      <img src={secondaryImage} alt="" className=" w-20 h-20 md:w-72 md:h-72 absolute -top-4 -left-4 md:-top-14 md:-left-32 -z-10" />
     </div>
   </div>
   )
